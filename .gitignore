@@ -1,0 +1,35 @@
+# Local clones (explore upstream separately)
+/repos/
+.venv/
+
+# Secrets / tokens
+.discord_token
+.matrix_token
+.env
+
+# Local-only harnesses (chat scrapers, personal BIO wrappers, …)
+/local_scripts/
+
+# Private hunt notes (local only)
+/notes/
+
+# All device / session / chat / promo captures (local only)
+# Includes serials, firmware blobs, Discord/Matrix dumps, fake-nonce QRs,
+# BT6 branding, CHEESO/media reference stills, hop dumps, etc.
+/captures/
+
+# Unrelated / build noise
+/dist/
+tools/132hop/out/
+
+# Light Bank: ship SVGs only — not promo/reference photos
+tools/genomics/assets/*.jpg
+tools/genomics/assets/*.jpeg
+tools/genomics/assets/*.webp
+tools/genomics/assets/*.png
+tools/genomics/export_badge_svg.py
+
+.DS_Store
+**/__pycache__/
+.cursor/
+*.pyc

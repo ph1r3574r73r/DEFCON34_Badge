@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Light Bank — DEF CON 34 badge donor gene designer and QR breeder." />
+  <meta name="color-scheme" content="dark" />
+  <title>DC34 · The Light Bank</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="genomics.css?v=14" />
+</head>
+<body>
+  <div class="board-bg" aria-hidden="true">
+    <div class="board-hex"></div>
+    <div class="board-bloom"></div>
+    <div class="board-trace"></div>
+  </div>
+
+  <div id="secure-banner" class="secure-banner" hidden>
+    <strong>WebCrypto blocked.</strong>
+    Open this site over <code>https://</code> or <code>http://localhost</code> (not <code>file://</code>).
+  </div>
+
+  <main>
+    <div class="donor-layout">
+      <article class="preview-pane" id="unit-badge">
+        <div class="stage-card">
+          <div class="stage-glow" aria-hidden="true"></div>
+          <canvas id="badge-canvas" width="540" height="500" aria-label="Designed lights preview" role="button" tabindex="0" title="Tap core to scan your badge"></canvas>
+          <div class="stage-meta">
+            <div>
+              <p class="caption" id="badge-caption">Human donor · previewing designed gene</p>
+              <p class="hint tight" id="badge-family">Human · sun · SAO 101</p>
+            </div>
+            <div class="row gap stage-toggles">
+              <label class="check"><input type="checkbox" id="jack-eyes" checked /> Eyes</label>
+              <label class="check"><input type="checkbox" id="paused" /> Pause</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="type-block">
+          <header class="unit-head">
+            <h2>Donor type</h2>
+            <p class="hint tight">Same type as you → inbreeding</p>
+          </header>
+          <div class="type-grid" id="type-badge" role="listbox" aria-label="Donor colorway"></div>
+        </div>
+      </article>
+
+      <div class="designer-col">
+        <div class="block" id="genome-editor">
+          <header class="unit-head">
+            <h2>Gene</h2>
+            <p class="hint tight">Mutation None = exact send</p>
+          </header>
+          <div class="row gap presets" id="preset-row"></div>
+          <div id="gene-controls" class="gene-controls"></div>
+          <div class="gene-tools">
+            <label>Mutation
+              <select id="mut-badge">
+                <option value="0" selected>None</option>
+                <option value="64">Baseline</option>
+                <option value="100">Elevated</option>
+                <option value="140">Radioactive</option>
+                <option value="240">Apocalyptic</option>
+              </select>
+            </label>
+          </div>
+          <details class="gene-advanced">
+            <summary>Advanced · gene hex</summary>
+            <label>Gene hex
+              <input type="text" id="gene-hex" class="mono" spellcheck="false" maxlength="18" placeholder="18 hex chars" />
+            </label>
+          </details>
+          <div class="row gap actions">
+            <button type="button" id="btn-reroll" class="ghost">Roll type-biased</button>
+          </div>
+        </div>
+
+        <div class="breed-dock" id="breed-dock">
+          <header class="unit-head">
+            <h2>Breed</h2>
+            <p class="hint tight">ShowKey on badge → tap core OLED → scan gene QR</p>
+          </header>
+          <p class="caption" id="scan-status">Tap the core on the preview to scan your badge</p>
+          <div class="row gap">
+            <button type="button" id="btn-copy-b45" class="ghost" disabled>Copy payload</button>
+          </div>
+          <p class="hint tight" id="qr-caption"></p>
+          <details class="paste-fallback">
+            <summary>Paste nonce instead</summary>
+            <label>Nonce (base45 or hex)
+              <textarea id="qr-paste" class="mono" rows="2" placeholder="header‖nonce base45, or 24-hex nonce"></textarea>
+            </label>
+            <button type="button" id="btn-respond-paste">Mint gene QR</button>
+          </details>
+          <div class="breed-sources" aria-hidden="true">
+            <video id="cam-video" playsinline muted></video>
+            <canvas id="cam-overlay" width="1" height="1"></canvas>
+            <canvas id="qr-canvas" width="240" height="240"></canvas>
+            <pre id="qr-b45" class="mono"></pre>
+            <div id="qr-stage" hidden></div>
+            <p id="gene-idle" hidden></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-attr">
+    <p>
+      Community tool — not official DEF CON / Baochip / CHEESO.
+      Carrier outlines from public
+      <a href="https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20badge/">media.defcon.org</a>
+      KiCad (HUMAN / INHUMAN); Uber approx. See <code>docs/CREDITS.md</code> in the source repo.
+    </p>
+  </footer>
+
+  <script src="gene_model.js?v=13"></script>
+  <script src="led_layout.js?v=13"></script>
+  <script src="gcm_siv.js?v=13"></script>
+  <script src="qr_alnum.js?v=13"></script>
+  <script src="app.js?v=13"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Local-only reference / promo stills (site uses SVG outlines only)
+assets/*.jpg
+assets/*.jpeg
+assets/*.webp
+assets/*.png
+assets/uber-frame-*.jpg
+assets/uber-ref*.jpg
+
+# SVG rebuild helper (needs parent KiCad trees)
+export_badge_svg.py
