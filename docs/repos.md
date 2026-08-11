@@ -96,7 +96,7 @@ Useful writeups and tools. Treat as research / toys — not ship firmware.
 | [badge.sex](https://badge.sex) | Breed social |
 | [gamechangersai.org/dc34badge](https://gamechangersai.org/dc34badge) | OLED / lights UI |
 | [dc34.ithst.de](https://dc34.ithst.de/) | Light UI (third-party key paste) |
-| [The Light Bank](../tools/genomics/) | This repo’s donor gene designer |
+| [The Light Bank](https://ph1r3574r73r.github.io/DEFCON34_Badge/) | This repo’s donor gene designer ([source](../tools/genomics/)) |
 
 ### Press & commentary
 

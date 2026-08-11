@@ -19,12 +19,14 @@ Best first watch: [bunnie’s DEF CON 34 badge talk](https://www.youtube.com/wat
 
 Design a donor gene → scan your badge’s nonce QR → mint a gene QR it will accept.
 
+Play it live: **[The Light Bank](https://ph1r3574r73r.github.io/DEFCON34_Badge/)** (or locally:)
+
 ```bash
 cd tools/genomics && python3 -m http.server 8765
 # open http://127.0.0.1:8765/  (webcam needs localhost, not file://)
 ```
 
-After this repo is on GitHub: **Settings → Pages → GitHub Actions** deploys that folder automatically.
+Pages deploys from `tools/genomics/` via GitHub Actions when that tree changes.
 
 Same-type donors can trigger **inbreeding** mutation. Mutation **None** sends your design verbatim — the badge still *mixes* it with a new egg. Details: [docs/genetics.md](docs/genetics.md).
 

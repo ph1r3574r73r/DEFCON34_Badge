@@ -12,7 +12,7 @@ python3 -m http.server 8765
 # → http://127.0.0.1:8765/
 ```
 
-Needs **localhost** or **HTTPS** (webcam + WebCrypto). GitHub Pages works.
+Needs **localhost** or **HTTPS** (webcam + WebCrypto). Live: https://ph1r3574r73r.github.io/DEFCON34_Badge/
 
 **Tips:** Mutation **None** = exact sperm; same type as you → inbreeding. The badge still blends with a new egg — you’re donating DNA, not painting pixels.
 

@@ -116,6 +116,6 @@ Encrypted gene QRs are AES-GCM-SIV under `K = Ko ‖ Kp`. Once `K` is known, [Th
 | `scripts/dc34_gene.py` | Haploid/Diploid/meiosis/mutate + `approx_frame` |
 | `scripts/breed_sim.py` | Offline peer breed (needs `--key-hex` for crypto steps) |
 | `scripts/genetics_farm.py` | Multi-nonce breed helper (research) |
-| [`tools/genomics/`](../tools/genomics/) | **The Light Bank** — donor gene UI + QR breed |
+| [`tools/genomics/`](../tools/genomics/) | **The Light Bank** — [live](https://ph1r3574r73r.github.io/DEFCON34_Badge/) · donor UI + QR breed |
 
-Open `tools/genomics/index.html` via `python3 -m http.server` (or the GitHub Pages deploy). Webcam needs localhost/HTTPS.
+Open [The Light Bank](https://ph1r3574r73r.github.io/DEFCON34_Badge/) (or `tools/genomics/` via `python3 -m http.server`). Webcam needs localhost/HTTPS.

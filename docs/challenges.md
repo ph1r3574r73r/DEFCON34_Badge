@@ -4,11 +4,11 @@ Spoilers kept light. The fun is the **climb**, not the pastebin.
 
 **Credits:** [CREDITS.md](CREDITS.md)
 
-New here? Play the light game first ([genetics.md](genetics.md) · [The Light Bank](../tools/genomics/)), poke the OLED, read source. Developer mode wipes the interesting secrets — choose wisely.
+New here? Play the light game first ([genetics.md](genetics.md) · [The Light Bank](https://ph1r3574r73r.github.io/DEFCON34_Badge/)), poke the OLED, read source. Developer mode wipes the interesting secrets — choose wisely.
 
 ## Known challenge themes
 
-1. **Light patterns** — Trade encrypted LED genomes. Ask nicely. Host donor: [The Light Bank](../tools/genomics/). Lore/art: [lore.md](lore.md) (CTF **badge type** ≠ CTF village puzzle).
+1. **Light patterns** — Trade encrypted LED genomes. Ask nicely. Host donor: [The Light Bank](https://ph1r3574r73r.github.io/DEFCON34_Badge/). Lore/art: [lore.md](lore.md) (CTF **badge type** ≠ CTF village puzzle).
 2. **Custom screen art** — Put an image on the OLED: [dc34-image](https://github.com/bunnie/dc34-image).
 3. **Shared light key `k0` / `Ko`** — Locked honest breeding during the hunt. Design: [`defcon-scheme.md`](https://github.com/bunnie/dc34-vault/blob/main/defcon-scheme.md). The community published the full key afterward; The Light Bank uses it so breeding stays playable.
 4. **RRAM FT flags** — Secrets planted in on-chip slots (table below).

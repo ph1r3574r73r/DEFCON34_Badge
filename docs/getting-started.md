@@ -19,7 +19,7 @@ Found a real vuln / flag? **dc34@baochip.com** — writeups welcome.
 4. Keep or rollback the new lights.
 
 Tip: see a nice pattern? Ask nicely and trade.  
-Want to *be* the donor from a laptop? → [The Light Bank](../tools/genomics/).
+Want to *be* the donor from a laptop? → [The Light Bank](https://ph1r3574r73r.github.io/DEFCON34_Badge/) ([source](../tools/genomics/)).
 
 ## Badge customization tools
 
